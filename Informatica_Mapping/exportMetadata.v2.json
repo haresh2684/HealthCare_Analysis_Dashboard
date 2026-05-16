@@ -1,0 +1,537 @@
+{
+  "name" : "Informatica_Mappings-1778904677972",
+  "sourceOrgId" : "4tALuM6wCr5gQHymaWLXSg",
+  "sourceOrgName" : "MKCE",
+  "exportedObjects" : [ {
+    "objectGuid" : "9MDdty08VQ2bhs6DijJFu9",
+    "objectName" : "Mapping2",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX61700000000000E"
+      },
+      "objectRefs" : [ "4LgUtXqcVKDcVoTGOYcP8d", "0ZRtGQs2zfvlPquTJYU3Ug" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "4iGIKlcWNFok83RLzafbkY",
+    "objectName" : "Heartrate_monitoring_using_expression",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX61700000000000D"
+      },
+      "objectRefs" : [ "0ZRtGQs2zfvlPquTJYU3Ug", "2wfAlMwUnSfe4oYo8WbbAi" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "aLfwZ7DN4wNcVFJCRMgXyM",
+    "objectName" : "Lookup_Dr_unique_id_with_Active_status",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX61700000000000C"
+      },
+      "objectRefs" : [ "1t51p2AeGdfelNEnY71K2e", "aquQEZBe8FqdDPTMcmBfKs", "0ZRtGQs2zfvlPquTJYU3Ug" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "c7dPMq1FJUScaM70Pp6iOT",
+    "objectName" : "Default",
+    "objectType" : "Project",
+    "path" : "/Explore",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ {
+        "name" : "IS_DEF_LOC",
+        "value" : "true"
+      } ],
+      "additionalInfo" : {
+        "description" : "Auto-generated Default Project",
+        "contentType" : null,
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "5fexzonjQACiCVtMT13M23",
+    "objectName" : "MappingTask_LookUp",
+    "objectType" : "MTT",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60Z00000000000B"
+      },
+      "objectRefs" : [ "1t51p2AeGdfelNEnY71K2e", "aLfwZ7DN4wNcVFJCRMgXyM", "aquQEZBe8FqdDPTMcmBfKs", "0ZRtGQs2zfvlPquTJYU3Ug", "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "5XNyf8UkR3xjqPaC7SUIQm",
+    "objectName" : "Informatica_Mappings",
+    "objectType" : "Folder",
+    "path" : "/Explore/Default",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : null,
+      "objectRefs" : [ ],
+      "contextAttributes" : [ ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "Binary",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "1t51p2AeGdfelNEnY71K2e",
+    "objectName" : "ORACLE_TARGET",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60B000000000007"
+      },
+      "objectRefs" : [ "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "3j0GYtpuWM8j5af45RZLmK",
+    "objectName" : "Taskflow1",
+    "objectType" : "TASKFLOW",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "1Y6tMFyglsO7RY6-gt-1606890-2026-05-15T08:38:37.853Z::tf.xml"
+      },
+      "objectRefs" : [ "5fexzonjQACiCVtMT13M23" ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "jpXAEUbdNwGkZdZMcOyOG1",
+    "objectName" : "MappingTask_Seq_generator",
+    "objectType" : "MTT",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60Z00000000000E"
+      },
+      "objectRefs" : [ "aquQEZBe8FqdDPTMcmBfKs", "25b4yMimpQqbn9waarh243", "0ZRtGQs2zfvlPquTJYU3Ug", "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "4rxP0FNgRg7ceE3DskwsqV",
+    "objectName" : "Filter_transmission_Dr_Status",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX61700000000000B"
+      },
+      "objectRefs" : [ "aquQEZBe8FqdDPTMcmBfKs", "0ZRtGQs2zfvlPquTJYU3Ug" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "5UPPPlnyuk3dNOlOYwUscN",
+    "objectName" : "Thendral",
+    "objectType" : "AgentGroup",
+    "path" : "/SYS",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX625000000000002"
+      },
+      "objectRefs" : [ ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "4LgUtXqcVKDcVoTGOYcP8d",
+    "objectName" : "FLATFILE_STAGE",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60B000000000005"
+      },
+      "objectRefs" : [ "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "0ZRtGQs2zfvlPquTJYU3Ug",
+    "objectName" : "ORACLE_SOURCE",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60B000000000006"
+      },
+      "objectRefs" : [ "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "25b4yMimpQqbn9waarh243",
+    "objectName" : "Seq_Generator",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX61700000000000F"
+      },
+      "objectRefs" : [ "aquQEZBe8FqdDPTMcmBfKs", "0ZRtGQs2zfvlPquTJYU3Ug" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "6U18WkeO225irSwTFt4j0Q",
+    "objectName" : "Error_Handling_Using_Notification",
+    "objectType" : "TASKFLOW",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "89SfSmbduaa-gt-1531536-2026-05-15T09:25:35.964Z::tf.xml"
+      },
+      "objectRefs" : [ "5fexzonjQACiCVtMT13M23" ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "09C8mMxGJkQia3wBxOk8QW",
+    "objectName" : "Taskflow2",
+    "objectType" : "TASKFLOW",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "O3vASaaaaa-gt-1560458-2026-05-15T09:18:43.647Z::tf.xml"
+      },
+      "objectRefs" : [ "5fexzonjQACiCVtMT13M23" ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "aQlJU7RnC12e4DmlPPTxUE",
+    "objectName" : "Mapping3",
+    "objectType" : "DTEMPLATE",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX61700000000000G"
+      },
+      "objectRefs" : [ "4LgUtXqcVKDcVoTGOYcP8d", "2wfAlMwUnSfe4oYo8WbbAi" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "eYpWcAzKQmedMSM14hVKiN",
+    "objectName" : "MappingTask_SEQ_GENERATOR_2",
+    "objectType" : "MTT",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60Z00000000000F"
+      },
+      "objectRefs" : [ "aquQEZBe8FqdDPTMcmBfKs", "25b4yMimpQqbn9waarh243", "0ZRtGQs2zfvlPquTJYU3Ug", "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "ae8Nh1toHYnfztv31UPT8T",
+    "objectName" : "MappingTask",
+    "objectType" : "MTT",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60Z00000000000H"
+      },
+      "objectRefs" : [ "1t51p2AeGdfelNEnY71K2e", "aLfwZ7DN4wNcVFJCRMgXyM", "aquQEZBe8FqdDPTMcmBfKs", "0ZRtGQs2zfvlPquTJYU3Ug", "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : null,
+        "contentType" : "JSON",
+        "documentState" : "VALID"
+      }
+    }
+  }, {
+    "objectGuid" : "aquQEZBe8FqdDPTMcmBfKs",
+    "objectName" : "ORACLE_STAGE",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60B000000000008"
+      },
+      "objectRefs" : [ "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "2wfAlMwUnSfe4oYo8WbbAi",
+    "objectName" : "SNOWFLAKE_TARGET",
+    "objectType" : "Connection",
+    "path" : "/SYS",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 0,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "01DMX60B000000000003"
+      },
+      "objectRefs" : [ "5UPPPlnyuk3dNOlOYwUscN" ],
+      "contextAttributes" : [ {
+        "name" : "id",
+        "value" : "@1"
+      } ],
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "JSON",
+        "documentState" : "COMPLETE"
+      }
+    }
+  }, {
+    "objectGuid" : "lUBVjHzJte1g8z8RlraJwO",
+    "objectName" : "Conditions_taskflow",
+    "objectType" : "TASKFLOW",
+    "path" : "/Explore/Default/Informatica_Mappings",
+    "providerName" : null,
+    "metadata" : {
+      "modelVersion" : {
+        "major" : 1,
+        "minor" : 0
+      },
+      "repoInfo" : {
+        "repoHandle" : "f1tgq695kchzt1Y-gt-1557290-2026-05-15T10:19:16.09Z::tf.xml"
+      },
+      "objectRefs" : [ "5fexzonjQACiCVtMT13M23" ],
+      "contextAttributes" : null,
+      "additionalInfo" : {
+        "description" : "",
+        "contentType" : "application/json; charset=utf-8",
+        "documentState" : "VALID"
+      }
+    }
+  } ]
+}

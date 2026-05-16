@@ -1,0 +1,204 @@
+<aetgt:getResponse xmlns:aetgt="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd"
+                   xmlns:types1="http://schemas.active-endpoints.com/appmodules/repository/2010/10/avrepository.xsd">
+   <types1:Item>
+      <types1:EntryId>f1tgq695kchzt1Y-gt-1557290-2026-05-15T10:19:16.09Z::tf.xml</types1:EntryId>
+      <types1:Name>Conditions_taskflow</types1:Name>
+      <types1:MimeType>application/xml+taskflow</types1:MimeType>
+      <types1:Description/>
+      <types1:AppliesTo/>
+      <types1:Tags/>
+      <types1:VersionLabel>1.0</types1:VersionLabel>
+      <types1:State>CURRENT</types1:State>
+      <types1:ProcessGroup/>
+      <types1:CreatedBy>927622bad016@mkce.ac.in</types1:CreatedBy>
+      <types1:CreationDate>2026-05-15T10:19:16Z</types1:CreationDate>
+      <types1:ModifiedBy>927622bad016@mkce.ac.in</types1:ModifiedBy>
+      <types1:ModificationDate>2026-05-15T10:19:44Z</types1:ModificationDate>
+      <types1:PublicationStatus>published</types1:PublicationStatus>
+      <types1:PublishedBy>927622bad016@mkce.ac.in</types1:PublishedBy>
+      <types1:PublicationDate>2026-05-15T10:19:48Z</types1:PublicationDate>
+      <types1:PublishedContributionId>project:/tf.Conditions_taskflow/Conditions_taskflow.tf.xml</types1:PublishedContributionId>
+      <types1:Entry>
+         <taskflow xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2010/10/avosScreenflow.xsd"
+                   xmlns:tfm="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"
+                   xmlns:list="urn:activevos:spi:list:functions"
+                   GUID="lUBVjHzJte1g8z8RlraJwO"
+                   displayName="Conditions_taskflow"
+                   name="Conditions_taskflow"
+                   overrideAPIName="false">
+            <parameterSet xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2021/04/taskflowModel.xsd"/>
+            <appliesTo/>
+            <description/>
+            <tags/>
+            <generator>Informatica Process Designer 11</generator>
+            <tempFields>
+               <field description="" name="Data Task 1" type="reference">
+                  <options>
+                     <option name="failOnNotRun">false</option>
+                     <option name="failOnFault">false</option>
+                     <option name="referenceTo">$po:MappingTask-LookUp-5fexzonjQACiCVtMT13M23</option>
+                  </options>
+               </field>
+            </tempFields>
+            <notes/>
+            <deployment skipIfRunning="false" suspendOnFault="false" tracingLevel="verbose">
+               <rest/>
+            </deployment>
+            <extData>
+               <nvpair name="treatEmptyStringAsNotNull">false</nvpair>
+               <nvpair name="treatEmptyObjectListAsArray">false</nvpair>
+            </extData>
+            <flow id="a">
+               <start id="b">
+                  <link id="mp6riu47" targetId="mp6riu66"/>
+               </start>
+               <eventContainer id="mp6riu66">
+                  <service id="mp6riu46">
+                     <title>Data Task 1</title>
+                     <serviceName>ICSExecuteDataTask</serviceName>
+                     <serviceGUID/>
+                     <serviceInput>
+                        <parameter name="Wait for Task to Complete" source="constant" updatable="true">true</parameter>
+                        <parameter name="Max Wait" source="constant" updatable="true">604800</parameter>
+                        <parameter name="Task Name" source="constant" updatable="true">MappingTask_LookUp</parameter>
+                        <parameter name="GUID" source="constant" updatable="true">5fexzonjQACiCVtMT13M23</parameter>
+                        <parameter name="Task Type" source="constant" updatable="true">MCT</parameter>
+                        <parameter name="Has Inout Parameters" source="constant" updatable="true">false</parameter>
+                        <parameter name="taskField" source="nested">
+                           <operation source="field" to="MappingTask-LookUp-5fexzonjQACiCVtMT13M23">temp.Data Task 1</operation>
+                        </parameter>
+                     </serviceInput>
+                     <serviceOutput>
+                        <operation source="field" to="temp.Data Task 1/output/Object_Name">Object Name</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Run_Id">Run Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Log_Id">Log Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Task_Id">Task Id</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Task_Status">Task Status</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Success_Source_Rows">Success Source Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Failed_Source_Rows">Failed Source Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Success_Target_Rows">Success Target Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Failed_Target_Rows">Failed Target Rows</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Start_Time">Start Time</operation>
+                        <operation source="field" to="temp.Data Task 1/output/End_Time">End Time</operation>
+                        <operation source="field" to="temp.Data Task 1/output/Error_Message">Error Message</operation>
+                        <operation source="field" to="temp.Data Task 1/output/TotalTransErrors">Total Transformation Errors</operation>
+                        <operation source="field" to="temp.Data Task 1/output/FirstErrorCode">First Error Code</operation>
+                     </serviceOutput>
+                  </service>
+                  <link id="mp6riu4d" targetId="mp6riu4c"/>
+                  <events>
+                     <catch faultField="temp.Data Task 1/fault"
+                            id="mp6riu64"
+                            interrupting="true"
+                            name="error">
+                        <suspend/>
+                     </catch>
+                     <catch faultField="temp.Data Task 1/fault"
+                            id="mp6riu65"
+                            interrupting="true"
+                            name="warning"/>
+                  </events>
+               </eventContainer>
+               <container id="mp6riu4c" type="exclusive">
+                  <title>Decision 1</title>
+                  <flow id="mp6riu4g">
+                     <eventContainer id="mp6riu7b">
+                        <service id="mp6riu4s">
+                           <title>Notification Task 1</title>
+                           <serviceName>emailNotificationService</serviceName>
+                           <serviceGUID/>
+                           <serviceInput>
+                              <parameter name="Email To" source="constant">hareshkrishnamoorthy04@gmail.com</parameter>
+                              <parameter name="Email Cc" source="constant"/>
+                              <parameter name="Email Bcc" source="constant"/>
+                              <parameter name="Email Subject" source="constant"/>
+                              <parameter name="Email Content Type" source="constant">text</parameter>
+                              <parameter name="Email Body" source="constant"> &lt;p&gt;&lt;strong&gt;&lt;em&gt;The DataTask is failed....&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; </parameter>
+                           </serviceInput>
+                           <serviceOutput/>
+                        </service>
+                        <events>
+                           <catch faultField="temp.dummyTF5895/fault"
+                                  id="mp6riu4p"
+                                  interrupting="true"
+                                  name="warning"/>
+                        </events>
+                     </eventContainer>
+                     <link id="mp6riu4h" targetId="mp6riu4c" type="containerLink"/>
+                  </flow>
+                  <flow id="mp6riu4j">
+                     <eventContainer id="mp6riu7z">
+                        <service id="mp6riu59">
+                           <title>Notification Task 2</title>
+                           <serviceName>emailNotificationService</serviceName>
+                           <serviceGUID/>
+                           <serviceInput>
+                              <parameter name="Email To" source="constant">hareshkrishnamoorthy04@gmail.com</parameter>
+                              <parameter name="Email Cc" source="constant"/>
+                              <parameter name="Email Bcc" source="constant"/>
+                              <parameter name="Email Subject" source="constant"/>
+                              <parameter name="Email Content Type" source="constant">text</parameter>
+                              <parameter name="Email Body" source="constant"> &lt;p&gt;&lt;em&gt;&lt;strong&gt;The datatask runs sucessfully.....&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt; </parameter>
+                           </serviceInput>
+                           <serviceOutput/>
+                        </service>
+                        <events>
+                           <catch faultField="temp.dummyTF5895/fault"
+                                  id="mp6riu56"
+                                  interrupting="true"
+                                  name="warning"/>
+                        </events>
+                     </eventContainer>
+                     <link id="mp6riu4k" targetId="mp6riu4c" type="containerLink"/>
+                  </flow>
+                  <link id="mp6riu4f" targetId="mp6riu4g" type="containerLink">
+                     <condition source="formula">
+                        <function name="contains">
+                           <arg name="left">{$temp.DataTask1[1]/fault[1]/detail[1]/errOutputDetail[1]/Error_Message}</arg>
+                           <arg name="right">ERROR</arg>
+                        </function>
+                     </condition>
+                  </link>
+                  <link id="mp6riu4i" targetId="mp6riu4j" type="containerLink"/>
+                  <link id="mp6riu4e" targetId="c"/>
+               </container>
+               <end id="c"/>
+            </flow>
+            <dependencies>
+               <processObject xmlns="http://schemas.active-endpoints.com/appmodules/screenflow/2011/06/avosHostEnvironment.xsd"
+                              displayName="MappingTask-LookUp-5fexzonjQACiCVtMT13M23"
+                              isByCopy="true"
+                              name="MappingTask-LookUp-5fexzonjQACiCVtMT13M23">
+                  <description/>
+                  <tags/>
+                  <detail>
+                     <field label="TaskProperties Parameters"
+                            name="taskProperties"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Output Parameters"
+                            name="output"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Fault"
+                            name="fault"
+                            nullable="true"
+                            required="false"
+                            type="reference"/>
+                     <field label="Max Wait (Seconds)"
+                            name="Max_Wait"
+                            nullable="true"
+                            required="false"
+                            type="int"/>
+                  </detail>
+               </processObject>
+            </dependencies>
+         </taskflow>
+      </types1:Entry>
+      <types1:GUID>lUBVjHzJte1g8z8RlraJwO</types1:GUID>
+      <types1:DisplayName>Conditions_taskflow</types1:DisplayName>
+   </types1:Item>
+   <types1:CurrentServerDateTime>2026-05-16T04:11:27.354Z</types1:CurrentServerDateTime>
+</aetgt:getResponse>
